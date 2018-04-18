@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+button {
+  outline: 0 none;
+  border: 0 none;
+}
+html {
+  font-size: 625%;
+}
+body {
+  max-width: 6.4rem;
+  min-width: 3.2rem;
+  margin: 0 auto;
+  background: #ccc;
+  height: 100%;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: ",";
+  display: block;
+  visibility: hidden;
+  clear: both;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+.threeBTN {
+  width: 100%;
+}
+.threeBTN li {
+  width: 2.9rem;
+  height: 0.41rem;
+  font-size: 0.14rem;
+  line-height: 0.41rem;
+  text-align: center;
+  margin: 0 auto 0.21rem;
+  cursor: pointer;
+  border-radius: 0.04rem;
+}
+.threeBTN li a {
+  color: #fff;
+}
+.threeBTN .ordinary {
+  background: #0cc;
+}
+.threeBTN .special {
+  background: #09c;
+}
+.threeBTN .service {
+  background: #393;
+}
