@@ -9,8 +9,9 @@ class BackT extends Component {
     render() {
       return (
         <div>
-          <div className="title">
-            <a className="Text_title" href="javascript:;" onClick={this.props.backonClick}>＜返回</a>
+          <div className="advantage_back">
+            <a className="advantage_back_icon" href="javascript:;" onClick={this.props.backonClick}>返回</a>
+            {this.props.tit}
           </div>
         </div>
       )

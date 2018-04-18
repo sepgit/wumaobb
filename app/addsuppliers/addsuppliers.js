@@ -386,7 +386,7 @@ class Addsuppliers extends Component {
     
     render() {
         return (
-            <div className="body">
+            <div className="youshixinzeng">
                 {
                     this.state.Pagestatus == 'add' ?
                         <div>

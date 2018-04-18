@@ -3,19 +3,42 @@ a{text-decoration:none;color: #000}
 ol,ul,li{list-style: none;}
 img{border:0 none;vertical-align: middle;}
 button{outline: 0 none;border: 0 none;}
-html{font-size:625%}
-@fz:100rem;
+html{font-size:62.5%}
+//设置页面字体大小。@fz 就相当于 1px
+@fz:12rem;
 body{max-width:640/@fz;min-width:320/@fz;margin: 0 auto;background: #ccc;height: 100%;}
 .clearfix{*zoom:1;}
 .clearfix:after{content: ",";display: block;visibility: hidden;clear: both;line-height: 0;font-size: 0;height:0;}
-//首页
 
+// 返回按钮 
+.advantage_back{height: 40/@fz;width: 100%;line-height: 40/@fz;border-width:1px 0;border-style:solid;border-color:#797979;background:#fff;text-align: center;position: relative;font-size: 20/@fz;margin-bottom:30/@fz;
+    .advantage_back_icon{position: absolute;left:0;top: 0;width:70/@fz;height:40/@fz;line-height: 40/@fz;
+
+    }
+}
+.advantage_back_icon:after{content: '';width: 12/@fz;height: 12/@fz;border-width: 0 0 2/@fz 2/@fz;border-style:solid;border-color:#333;position: absolute;left: 5.5/@fz;top:14/@fz;transform: rotate(45deg);}
+//首页
 .threeBTN{width: 100%;
-    li{width:290/@fz;height:41/@fz;font-size: 14/@fz;line-height:41/@fz;text-align: center;margin: 0 auto 21/@fz;cursor: pointer;border-radius: 4/@fz;
+    li{width:350/@fz;height:60/@fz;font-size: 20/@fz;line-height:60/@fz;text-align: center;margin: 0 auto 30/@fz;cursor: pointer;border-radius: 4/@fz;
         a{color:#fff;}
     }
-    .ordinary{background:#0cc }
-    .special{background:#09c }
+    .ordinary{background:#0cc}
+    .special{background:#09c}
     .service{background: #393}
 }
-
+//普通运价
+.ordinary_page{
+    ul{width: 100%;
+        li{width:350/@fz;height:60/@fz;font-size: 20/@fz;line-height:60/@fz;text-align: center;margin: 0 auto 30/@fz;cursor: pointer;border-radius: 4/@fz;background:#169bd5;
+            a{color:#fff;}
+        }
+    } 
+}
+//起运地 多选
+.ordinary_orgin{
+    .ord_prompt{margin: -10/@fz 0 0;height:34/@fz;padding:4/@fz 0 0 18/@fz;font-size:20/@fz;
+        span{color:#f00}
+    }
+    .theFirst{height:30/@fz;line-height:30/@fz;padding-left:18/@fz;}
+    .ord_label{background: #fff;}
+}
