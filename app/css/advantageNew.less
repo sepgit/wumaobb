@@ -1,5 +1,5 @@
 *{margin: 0;padding: 0}
-a{text-decoration:none;color: #000}
+a{text-decoration:none;}
 ol,ul,li{list-style: none;}
 img{border:0 none;vertical-align: middle;}
 button{outline: 0 none;border: 0 none;}
@@ -11,8 +11,9 @@ body{max-width:640/@fz;min-width:320/@fz;margin: 0 auto;background: #ccc;height:
 .clearfix:after{content: ",";display: block;visibility: hidden;clear: both;line-height: 0;font-size: 0;height:0;}
 
 // 返回按钮 
-.advantage_back{height: 40/@fz;width: 100%;line-height: 40/@fz;border-width:1px 0;border-style:solid;border-color:#797979;background:#fff;text-align: center;position: relative;font-size: 20/@fz;margin-bottom:30/@fz;
-    .advantage_back_icon{position: absolute;left:0;top: 0;width:70/@fz;height:40/@fz;line-height: 40/@fz;
+.thetit{padding-top:80/@fz;}
+.advantage_back{height: 50/@fz;width: 100%;line-height: 50/@fz;border-width:1px 0;border-style:solid;border-color:#797979;background:#fff;text-align: center;position: relative;font-size: 20/@fz;margin-bottom:30/@fz;position:fixed;top:0;left:0;z-index:1000;
+    .advantage_back_icon{position: absolute;left:0;top: 4/@fz;width:70/@fz;height:40/@fz;line-height: 40/@fz;color: #333;
 
     }
 }
@@ -36,9 +37,23 @@ body{max-width:640/@fz;min-width:320/@fz;margin: 0 auto;background: #ccc;height:
 }
 //起运地 多选
 .ordinary_orgin{
-    .ord_prompt{margin: -10/@fz 0 0;height:34/@fz;padding:4/@fz 0 0 18/@fz;font-size:20/@fz;
+    .ord_prompt{margin: 0 0 0;height:34/@fz;padding:4/@fz 0 0 18/@fz;font-size:20/@fz;
         span{color:#f00}
     }
-    .theFirst{height:30/@fz;line-height:30/@fz;padding-left:18/@fz;}
-    .ord_label{background: #fff;}
+    
+    .ord_label{background: #fff;border-bottom: 1px solid #ccc;
+        .deta_ord_label{float: left;width:60/@fz;height:46/@fz;line-height: 46/@fz;padding-left:15/@fz;}
+    }
+    .otherRemarks{background: #fff;
+        .markers{padding-top: 10/@fz}
+        li{height: 50/@fz;}
+    }
+}
+.thestep{height:30/@fz;line-height:30/@fz;padding-left:18/@fz;margin-top: 12/@fz}
+.labelChoose{position: relative;;height: 50/@fz;padding-top:10/@fz;font-size: 16/@fz;z-index: 400;
+    .red{color: #F00;position: absolute;top: 20/@fz;left: 8/@fz;font-size:20/@fz;z-index: 500;}
+}
+.input-txt-ft{text-align: right;}
+.bottom_btn{margin:68/@fz 0 40/@fz;
+    a{height:46/@fz;}
 }

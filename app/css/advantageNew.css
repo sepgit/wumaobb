@@ -4,7 +4,6 @@
 }
 a {
   text-decoration: none;
-  color: #000;
 }
 ol,
 ul,
@@ -41,10 +40,13 @@ body {
   font-size: 0;
   height: 0;
 }
+.thetit {
+  padding-top: 6.66666667rem;
+}
 .advantage_back {
-  height: 3.33333333rem;
+  height: 4.16666667rem;
   width: 100%;
-  line-height: 3.33333333rem;
+  line-height: 4.16666667rem;
   border-width: 1px 0;
   border-style: solid;
   border-color: #797979;
@@ -53,14 +55,19 @@ body {
   position: relative;
   font-size: 1.66666667rem;
   margin-bottom: 2.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 .advantage_back .advantage_back_icon {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 0.33333333rem;
   width: 5.83333333rem;
   height: 3.33333333rem;
   line-height: 3.33333333rem;
+  color: #333;
 }
 .advantage_back_icon:after {
   content: '';
@@ -117,7 +124,7 @@ body {
   color: #fff;
 }
 .ordinary_orgin .ord_prompt {
-  margin: -0.83333333rem 0 0;
+  margin: 0 0 0;
   height: 2.83333333rem;
   padding: 0.33333333rem 0 0 1.5rem;
   font-size: 1.66666667rem;
@@ -125,11 +132,53 @@ body {
 .ordinary_orgin .ord_prompt span {
   color: #f00;
 }
-.ordinary_orgin .theFirst {
+.ordinary_orgin .ord_label {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.ordinary_orgin .ord_label .deta_ord_label {
+  float: left;
+  width: 5rem;
+  height: 3.83333333rem;
+  line-height: 3.83333333rem;
+  padding-left: 1.25rem;
+}
+.ordinary_orgin .otherRemarks {
+  background: #fff;
+}
+.ordinary_orgin .otherRemarks .markers {
+  padding-top: 0.83333333rem;
+}
+.ordinary_orgin .otherRemarks li {
+  height: 4.16666667rem;
+}
+.thestep {
   height: 2.5rem;
   line-height: 2.5rem;
   padding-left: 1.5rem;
+  margin-top: 1rem;
 }
-.ordinary_orgin .ord_label {
-  background: #fff;
+.labelChoose {
+  position: relative;
+  height: 4.16666667rem;
+  padding-top: 0.83333333rem;
+  font-size: 1.33333333rem;
+  z-index: 400;
+}
+.labelChoose .red {
+  color: #F00;
+  position: absolute;
+  top: 1.66666667rem;
+  left: 0.66666667rem;
+  font-size: 1.66666667rem;
+  z-index: 500;
+}
+.input-txt-ft {
+  text-align: right;
+}
+.bottom_btn {
+  margin: 5.66666667rem 0 3.33333333rem;
+}
+.bottom_btn a {
+  height: 3.83333333rem;
 }

@@ -17,7 +17,7 @@ class StrInput extends Component {
             {
               this.props.Enable==0?
                 <div className="weui-cells__tips">{this.props.TextProp}</div>:
-                <input className="weui-input"
+                <input className="weui-input input-txt-ft"
                 defaultValue={this.props.TextProp}
                 placeholder={this.props.promptProp}
                 onChange={this.props.updateStateProp}

@@ -11,7 +11,7 @@ module.exports = {
     historyApiFallback: true,//不跳转
     disableHostCheck: true,
     host: '192.168.16.184',
-    port:5220,
+    port:5330,
     inline: true//实时刷新
   },
   module: {
