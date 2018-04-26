@@ -182,3 +182,37 @@ body {
 .bottom_btn a {
   height: 3.83333333rem;
 }
+.chooseServerType {
+  background: #ccc;
+  padding-left: 0.83333333rem;
+  height: 3.33333333rem;
+  line-height: 3.33333333rem;
+  font-size: 1.66666667rem;
+}
+.labelline {
+  height: 1.16666667rem;
+  background: #ccc;
+}
+.btn-margin {
+  height: 5rem;
+}
+.sperial_page .ord_prompt {
+  margin: 0 0 0;
+  height: 2.83333333rem;
+  padding: 0.33333333rem 0 0 1.5rem;
+  font-size: 1.66666667rem;
+}
+.sperial_page .ord_prompt span {
+  color: #f00;
+}
+.sperial_page .ord_label {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.sperial_page .ord_label .deta_ord_label {
+  float: left;
+  width: 5rem;
+  height: 3.83333333rem;
+  line-height: 3.83333333rem;
+  padding-left: 1.25rem;
+}

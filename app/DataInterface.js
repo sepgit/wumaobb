@@ -87,36 +87,7 @@ export function getData(url,params,rData){
     });
 }
 
-export function postData(url,params,rData){
-  if (params) {
-    let paramsArray = [];
-    let params = '';
-    //拼接参数
-    Object.keys(params).forEach(key => paramsArray.push(key + '=' + params[key]))
-    if (params === '') {
-      params += paramsArray.join('&')
-    } else {
-      params += '&' + paramsArray.join('&')
-    }
-  }
-  //fetch请求
-  fetch(url, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded"
-    },
-    body: params
-  }).then(function(res) {
-    if (res.ok) {
-      rData(json["err"]);
-      alert("Perfect! Your settings are saved.");
-    } else if (res.status == 401) {
-      alert("Oops! You are not authorized.");
-    }
-  }, function(e) {
-    alert("Error submitting form!");
-  });
-}
+
 
 export function SendAxtiveEmail(userName){
   fetch(HTTPED+'api/users/'+userName+'/',{
@@ -257,6 +228,36 @@ export function putUserInfo(userName,wxtoken,user,name,qq,compName,compAlia,indu
     }
   }, function(e) {
     message.error("连接服务器失败，请联系管理员！");
+  });
+}
+export function postData(url,params,rData){
+  if (params) {
+    let paramsArray = [];
+    let params = '';
+    //拼接参数
+    Object.keys(params).forEach(key => paramsArray.push(key + '=' + params[key]))
+    if (params === '') {
+      params += paramsArray.join('&')
+    } else {
+      params += '&' + paramsArray.join('&')
+    }
+  }
+  //fetch请求
+  fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: params
+  }).then(function(res) {
+    if (res.ok) {
+      rData(json["err"]);
+      alert("Perfect! Your settings are saved.");
+    } else if (res.status == 401) {
+      alert("Oops! You are not authorized.");
+    }
+  }, function(e) {
+    alert("Error submitting form!");
   });
 }
 
