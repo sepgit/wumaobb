@@ -2,40 +2,39 @@ import React, { Component } from 'react';
 import '../css/weui.css';
 import {getDataList,getCheckbind,getCookie} from '../DataInterface.js';
 import ListItem from '../component/ListItem.js';
-import BackTitle from '../component/BackTitle.js';
-import BackT from './backT.js';
+import BackT from './backT.js'
 
-class AdServList extends Component {
+class AdservOptiList extends Component {
   constructor(props) {
     super(props);
     this.ItemonClick = this.ItemonClick.bind(this);
-    this.getServList = this.getServList.bind(this);
-    this.GetRServList = this.GetRServList.bind(this);
+    this.getServOptisList = this.getServOptisList.bind(this);
+    this.GetRServOptisList = this.GetRServOptisList.bind(this);
     this.renderList = this.renderList.bind(this);
 
     this.state={
-      servList:[],
+      servOptisList:[],
       SelectItemID:0,
       SelectItemCaption:''
     }
   }
 
   componentWillMount(){
-    let s = this.props.servType;
-    this.getServList(s);
+    let s = this.props.serv;
+    this.getServOptisList(s);
   }
 
-  getServList(servType){
+  getServOptisList(serv){
     let userName = this.props.BinduserName;
     let wxtoken = this.props.wxtoken;
-    let url = 'api/servs/?userName='+userName+'&wxtoken='+wxtoken+'&rowCount=0&pageIndex=1&servType='+servType;
+    let url = 'api/servOptis/?userName='+userName+'&wxtoken='+wxtoken+'&rowCount=0&pageIndex=1&serv='+serv;
     let params = [];
-    getDataList(url,params,this.GetRServList);
+    getDataList(url,params,this.GetRServOptisList);
   }
 
-  GetRServList(value){
+  GetRServOptisList(value){
     this.setState({
-      servList:value
+      servOptisList:value
     })
   }
 
@@ -49,9 +48,9 @@ class AdServList extends Component {
 
   renderList(){
     let re=[];
-    this.state.servList.length>0?re=this.state.servList:re=this.state.servList;
+    this.state.servOptisList.length>0?re=this.state.servOptisList:re=this.state.servOptisList;
     return re.map(s => {
-      return <ListItem key={s.serv} idProp={s.serv} captionProp={s.servName} SelfonClickProp={this.ItemonClick}/>
+      return <ListItem key={s.servOpti} idProp={s.servOpti} captionProp={s.name} SelfonClickProp={this.ItemonClick}/>
     });
   }
 
@@ -66,4 +65,4 @@ class AdServList extends Component {
   }
 }
 
-export default AdServList;
+export default AdservOptiList;

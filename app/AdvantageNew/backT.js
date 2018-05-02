@@ -11,7 +11,7 @@ class BackT extends Component {
         <div>
           <div className="advantage_back">
             <a className="advantage_back_icon" href="javascript:;" onClick={this.props.backonClick}>返回</a>
-            {this.props.tit}
+            {this.props.tit}<span>{this.props.tit2}</span> 
           </div>
         </div>
       )

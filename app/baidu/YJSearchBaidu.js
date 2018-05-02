@@ -373,7 +373,7 @@ class YJSearchBaidu extends Component {
   renderServSelect(){
     return  <div>
       <div className="weui-cells">
-        <ServList BinduserName={this.state.BinduserName} wxtoken={this.state.wxtoken} servType='3'  GetSelectID={this.GetservID} backprop={this.back} />
+        <ServList BinduserName={this.state.BinduserName} wxtoken={this.state.wxtoken}  servType='3'  GetSelectID={this.GetservID} backprop={this.back} />
       </div>
     </div>
   }
